@@ -1,0 +1,10 @@
+body {
+ background-color:orange;
+ margin:0px;
+ padding:0px;
+}
+
+.templateBlock {
+ position:relative;
+ width:100%;
+}
