@@ -1,3 +1,12 @@
+Handlebars.registerHelper("each", function(array, block) {
+  var HTML = "";
+  for (var i=0; i<array.length; i+=1) {
+    array[i]["i"] = i+1; // Count the number of elements during the loop.
+    HTML += block.fn(array[i])
+  }
+  return HTML;
+});
+
 window.loadTemplate = function(url, data) {
   var idPrefix = "td";
   if ((typeof data) === "undefined") data = {};
@@ -17,7 +26,7 @@ window.loadTemplate = function(url, data) {
 
   }).fail(function() {
     var error = "Failed to load template...";
-    $("body").append(error);
+    $("#"+idPrefix+templateID).append(error);
 
   });
 }

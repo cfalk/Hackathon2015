@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/handlebars-v2.0.0.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/bindings.js"></script>
+    <link href="css/main.css" rel="stylesheet"></link>
+  </head>
+  <body>
+  <img src="construction_banner.png" style="position:absolute;z-index:100;">
+  </body>
+
+  <script>
+  var sponsors = ["Hello", "Goodbye", "oink"]
+  var sponsors = [
+                  {"name":"The Flash", 
+                   "link":"http://google.com", 
+                   "img":"http://www.great-kids-birthday-parties.com/images/flash_logo_internet_round_fanpop.jpg"},
+                  {"name":"Batman", 
+                   "link":"http://google.com", 
+                   "img":"http://images.askmen.com/top_10/celebrity/top-10-superhero-logos-1047366-flash-1047366-flash.jpg"},
+                  {"name":"Green Lantern", 
+                   "link":"http://google.com", 
+                   "img":"http://cdn.spellbrand.com/images/blog/images/The-Green-Lantern-logo-design.jpg"}
+                 ]
+
+  loadTemplate("menu.html");
+  loadTemplate("logo.html");
+  loadTemplate("sponsors.html", {"sponsors":sponsors});
+  loadTemplate("copyright.html");
+  </script>
+
+</html>
