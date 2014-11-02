@@ -1,0 +1,13 @@
+<div id="scheduleBlock">
+  {{#each schedule}}
+    <div class='scheduleChunk'>
+      <a href="#{{this.i}}" name="{{this.i}}">
+        <div class='scheduleDate'>{{this.date}}</div>
+      </a>
+      {{#each this.times}}
+        <div class='scheduleTime'>{{this.hours}} ({{this.location}})</div>
+        <div class='scheduleDescription'>{{this.description}}</div>
+      {{/each}}
+    </div>
+  {{/each}}
+</div>

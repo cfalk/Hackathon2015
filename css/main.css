@@ -14,6 +14,7 @@ a {
  opacity:0.8;
  font-weight:bold;
  text-decoration:none;
+ outline:none;
 }
 a:hover {
  opacity:1;
@@ -98,6 +99,33 @@ box-shadow: inset 0px -9px 19px -8px rgba(0,0,0,0.4);
  max-width:250px;
 }
 
+
+#scheduleBlock {
+ background-color: rgb(150, 40, 27);
+ color:white;
+}
+.scheduleDate {
+ color:rgb(249, 191, 59);
+ font-weight:bold;
+ font-size:1.4em;
+ padding:0.2em;
+}
+.scheduleTime {
+ color:rgba(245, 171, 53, 0.9);
+ font-size:1.1em;
+ padding:0em 0em 0.1em 1em;
+}
+.scheduleDescription {
+ padding:0em 0em 0.8em 2em;
+}
+.scheduleDescription:last-child {
+ padding-bottom:0px;
+}
+.scheduleChunk {
+ padding:1em;
+ max-width:450px;
+ margin:0 auto;
+}
 
 
 
