@@ -7,6 +7,16 @@ Handlebars.registerHelper("each", function(array, block) {
   return HTML;
 });
 
+function addSuperScripts(results) {
+  var clean = results.replace(/[0-9]+(th|rd|st|nd)/g, function(captured) {
+    var number = captured.match(/([0-9]+)/)[1];
+    captured = captured.replace(number, "");
+    return number+"<span class='superscript'>"+captured+"</span>";
+  });
+
+  return clean;
+}
+
 window.loadTemplate = function(url, data) {
   var idPrefix = "td";
   if ((typeof data) === "undefined") data = {};
@@ -22,6 +32,9 @@ window.loadTemplate = function(url, data) {
     var template = Handlebars.compile(raw);
     var result = template(data);
     result = result+"</div>";
+
+    result = addSuperScripts(result);
+
     $("#"+idPrefix+templateID).append(result);
 
   }).fail(function() {
