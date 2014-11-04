@@ -9,6 +9,39 @@ body {
  margin:0px;
 }
 
+table {
+ width:100%;
+ max-width:500px;
+ text-align:center;
+ margin:1em auto;
+ border:none;
+ outline:none;
+
+ color:white;
+ background-color:maroon;
+ border-collapse:collapse;
+}
+
+
+td {
+ padding:1em;
+}
+
+tr:first-child {
+ background-color:#e74c3c;
+ font-size:1.4em;
+ color:white;
+
+}
+tr:first-child td {
+ padding:10px;
+
+-webkit-box-shadow: inset 0px -9px 19px -8px rgba(0,0,0,0.2);
+-moz-box-shadow: inset 0px -9px 19px -8px rgba(0,0,0,0.2);
+box-shadow: inset 0px -9px 19px -8px rgba(0,0,0,0.2);
+}
+
+
 a {
  color:rgb(8,64,129);
  opacity:0.8;
@@ -148,8 +181,9 @@ box-shadow: inset 0px 0px 19px 2px rgba(0,0,0,0.15);
 
 .infoSection {
  padding:0.5em 2em 1em 2em;
- max-width:400px;
+ max-width:600px;
  margin:0 auto;
+ text-align:justify;
 }
 
 .triplet {
