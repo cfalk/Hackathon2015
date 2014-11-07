@@ -17,6 +17,14 @@ function addSuperScripts(results) {
   return clean;
 }
 
+function addHashLinks(results) {
+  var $results = $(results);
+  $results.find(".hashLink").each(function(i) {
+    $(this).wrap("<a href=\"#"+i+"\" name=\""+i+"\"></a>");
+  });
+  return $results;
+};
+
 window.loadTemplate = function(url, data) {
   var idPrefix = "td";
   if ((typeof data) === "undefined") data = {};
@@ -34,6 +42,7 @@ window.loadTemplate = function(url, data) {
     result = result+"</div>";
 
     result = addSuperScripts(result);
+    result = addHashLinks(result);
 
     $("#"+idPrefix+templateID).append(result);
 
