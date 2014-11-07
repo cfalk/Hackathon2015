@@ -9,6 +9,11 @@ body {
  margin:0px;
 }
 
+iframe {
+ width:100%;
+ min-height:400px;
+}
+
 table {
  width:100%;
  max-width:500px;
