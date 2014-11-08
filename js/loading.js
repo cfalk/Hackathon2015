@@ -32,6 +32,16 @@ function addHashLinks(results) {
   return $results;
 };
 
+function addPopWords(results) {
+  var $results = $(results);
+  $(".popWord").each( function() {
+    var colors = ["#33a02c","#1f78b4","#e31a1c","#6a3d9a"];
+    var color = colors[parseInt(Math.random()*colors.length)];
+    $(this).css("color", color);
+  });
+  return $results;
+}
+
 window.loadTemplate = function(url, data) {
   var idPrefix = "td";
   if ((typeof data) === "undefined") data = {};
@@ -50,6 +60,7 @@ window.loadTemplate = function(url, data) {
 
     result = addSuperScripts(result);
     result = addHashLinks(result);
+    result = addPopWords(result);
 
     $("#"+idPrefix+templateID).append(result);
 
