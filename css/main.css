@@ -121,8 +121,10 @@ box-shadow: inset 0px -9px 19px -8px rgba(0,0,0,0.4);
 
 #sponsorBlock {
  text-align:center;
+ background-color: rgb(150, 40, 27);
 }
 .sponsor {
+ position:relative;
  display:inline-block;
  text-align:center;
  padding:1em;
@@ -130,11 +132,42 @@ box-shadow: inset 0px -9px 19px -8px rgba(0,0,0,0.4);
 .sponsorName {
  font-size:1.5em;
  padding:0.25em;
- color:rgb(127,0,0);
+ color:rgb(249, 191, 59);
 }
 .sponsorLogo {
  border-radius:25px;
  max-width:250px;
+}
+
+
+.level {
+ position:absolute;
+ top:0.25em;
+ right:0em;
+ font-weight:bold;
+ background-color:#e74c3c;
+ padding:0.5em 1em;
+ font-size:1.2em;
+ opacity:0.95;
+ border-right:4px solid black;
+}
+
+.level.platinum {
+ font-size:1.2em;
+ color:cyan;
+ border-right-color:cyan;
+}
+.level.gold {
+ color:gold;
+ border-right-color:gold;
+}
+.level.silver {
+ color:rgb(220,220,220);
+ border-right-color:rgb(220,220,220);
+}
+.level.bronze {
+ color:#EB9532;
+ border-right-color:#EB9532;
 }
 
 

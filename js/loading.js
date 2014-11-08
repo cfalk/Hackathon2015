@@ -7,6 +7,13 @@ Handlebars.registerHelper("each", function(array, block) {
   return HTML;
 });
 
+Handlebars.registerHelper("ifEqual", function(arg1, arg2, block) {
+  return (arg1===arg2) ? block.fn(block) : "";
+});
+
+
+
+
 function addSuperScripts(results) {
   var clean = results.replace(/[0-9]+(th|rd|st|nd)/g, function(captured) {
     var number = captured.match(/([0-9]+)/)[1];
