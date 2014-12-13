@@ -1,0 +1,13 @@
+<div id="scheduleBlock">
+  {{#each judges}}
+    <div class='scheduleChunk'>
+      <div class='scheduleDate'>{{this.name}}</div>
+        <div class='scheduleTime'>{{this.position}} @
+          <a href="{{this.link}}">{{this.org}}</a>
+        </div>
+
+        <div class='scheduleDescription'>{{this.bio}}</div>
+    </div>
+  {{/each}}
+</div>
+

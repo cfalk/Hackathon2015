@@ -6,7 +6,7 @@ body {
  font-family:"Quattrocento Sans" "Arial";
  font-size:1.25em;
  line-height:1.3em;
- color:rgb(0,0,0);
+ color:#68776c;
  background-color: rgb(250,250,250);
  padding:0px;
  margin:0px;
@@ -56,6 +56,13 @@ a {
 }
 a:hover {
  opacity:1;
+}
+
+.tinyCenterText {
+ text-align:center;
+ padding-top:1em;
+ font-size:0.9em;
+ margin:1em 1.75em 0em 1.75em;
 }
 
 .bigText {
@@ -215,8 +222,7 @@ a:hover {
 
 
 #scheduleBlock {
- background-color: rgb(250,250,250);
- color:white;
+ color:#68776c;
 }
 .scheduleDate {
  color:rgb(249, 191, 59);
@@ -224,10 +230,14 @@ a:hover {
  font-size:1.4em;
  padding:0.2em;
 }
-.scheduleTime {
+.scheduleTime, .ribbonBanner {
  color:rgba(245, 171, 53, 0.9);
  font-size:1.1em;
  padding:0em 0em 0.1em 1em;
+}
+.scheduleTitle {
+ padding:0em 0em 0em 2em;
+ font-weight:bold;
 }
 .scheduleDescription {
  padding:0em 0em 0.8em 2em;
@@ -242,14 +252,12 @@ a:hover {
 }
 
 
-
 .ribbonBanner {
- background-color: #55bf55;
- color:rgb(250,250,250);
- padding:0.5em;
+ padding-top:1em;
  text-align:center;
  font-size:1.2em;
-
+ max-width:1000px;
+ margin:0 auto;
 }
 
 .superscript {
@@ -262,6 +270,10 @@ a:hover {
  max-width:600px;
  margin:0 auto;
  text-align:justify;
+}
+
+.infoSection li {
+ font-size:0.8em;
 }
 
 .triplet {

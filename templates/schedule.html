@@ -1,9 +1,17 @@
+<div class='tinyCenterText'>
+All events will take place in Founders Great Hall unless otherwise noted.
+</div>
+
 <div id="scheduleBlock">
   {{#each schedule}}
     <div class='scheduleChunk'>
       <div class='scheduleDate hashLink'>{{this.date}}</div>
       {{#each this.times}}
-        <div class='scheduleTime'>{{this.hours}} ({{this.location}})</div>
+        <div class='scheduleTime'>{{this.hours}}
+          {{# if this.location }} ({{this.location}}) {{/if}}
+        </div>
+
+        <div class='scheduleTitle hashLink'>{{this.title}}</div>
         <div class='scheduleDescription'>{{this.description}}</div>
       {{/each}}
     </div>
