@@ -101,6 +101,7 @@ a:hover {
 }
 
 #logoInfo {
+ position:relative;
  font-family:"Source Sans Pro";
  line-height:1.4em;
  box-sizing:border-box;
@@ -112,10 +113,12 @@ a:hover {
 }
 
 #logoDate {
- float:left;
+ left:4px;;
+ position:absolute;
 }
 #logoLocal {
- float:right
+ right:4px;
+ position:absolute;
 }
 
 #logoBlock {
