@@ -1,27 +1,27 @@
 <div id="sponsorBlock">
 {{#each sponsors}}
   <div class="sponsor">
-  <img class="sponsorLogo" src="{{this.img}}"/>
-  <a href="{{this.link}}">
-    <div class="sponsorName">{{this.name}}</div>
-  </a>
+    <a href="{{this.link}}">
+      <img class="sponsorLogo" src="{{this.img}}"/>
+      <div class="sponsorName">{{this.name}}</div>
 
-  {{#ifEqual this.level "platinum"}}
-    <div class='level platinum'>Platinum</div>
-  {{/ifEqual}}
+      {{#ifEqual this.level "platinum"}}
+        <div class='level platinum'>Platinum</div>
+      {{/ifEqual}}
 
-  {{#ifEqual this.level "gold"}}
-    <div class='level gold'>Gold</div>
-  {{/ifEqual}}
+      {{#ifEqual this.level "gold"}}
+        <div class='level gold'>Gold</div>
+      {{/ifEqual}}
 
-  {{#ifEqual this.level "silver"}}
-    <div class='level silver'>Silver</div>
-  {{/ifEqual}}
+      {{#ifEqual this.level "silver"}}
+        <div class='level silver'>Silver</div>
+      {{/ifEqual}}
 
-  {{#ifEqual this.level "bronze"}}
-    <div class='level bronze'>Bronze</div>
-  {{/ifEqual}}
+      {{#ifEqual this.level "bronze"}}
+        <div class='level bronze'>Bronze</div>
+      {{/ifEqual}}
 
+    </a>
   </div>
 {{/each}}
 </div>

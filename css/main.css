@@ -169,8 +169,14 @@ a:hover {
  background-color:initial;
 }
 
+#sponsorBlock a {
+ opacity:initial;
+ background-color:initial;
+}
+
 #sponsorBlock {
  text-align:center;
+ padding-top:1em;
  background-color: rgb(250,250,250);
 }
 .sponsor {
@@ -185,7 +191,6 @@ a:hover {
  color:rgb(249, 191, 59);
 }
 .sponsorLogo {
- border-radius:25px;
  max-width:250px;
 }
 
