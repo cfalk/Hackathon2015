@@ -60,6 +60,8 @@ window.loadTemplate = function(url, data) {
                        +idPrefix + templateID+"'></div>";
   $("body").append(emptyTemplate);
 
+  var container = "#"+idPrefix+templateID;
+
   var templateDir = "templates/"
   $.get(templateDir+url, function(raw) {
 
@@ -71,7 +73,11 @@ window.loadTemplate = function(url, data) {
     result = addHashLinks(result);
     result = addPopWords(result);
 
-    $("#"+idPrefix+templateID).append(result);
+    $(container).append(result);
+
+    if (typeof prepareTooltips !== "undefined"){
+      prepareTooltips(container);
+    }
 
   }).fail(function() {
     var error = "Failed to load template...";

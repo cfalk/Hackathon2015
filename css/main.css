@@ -280,6 +280,11 @@ a:hover {
  text-align:justify;
 }
 
+.scheduleDescription li {
+ font-size: 0.8em;
+ padding-left:1em;
+}
+
 .infoSection li {
  font-size:0.8em;
 }
