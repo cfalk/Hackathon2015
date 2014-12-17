@@ -309,8 +309,16 @@ a:hover {
  margin:0px auto;
  background-color:#d4ff02;
 }
-a.halfWidthButton {
+a.halfWidthButton, .smallButton a {
  background-color:initial;
+}
+
+.smallButton {
+ display:inline-block;
+ margin-top:1em;
+ padding:0.25em 1em;
+ font-size:0.8em;
+ background-color:#49d6dd;
 }
 
 .fullWidthButton {
