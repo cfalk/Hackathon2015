@@ -58,6 +58,12 @@ a:hover {
  opacity:1;
 }
 
+.hiddenLink {
+ font-weight:initial;
+ background-color:initial;
+ opacity:1;
+}
+
 .tinyCenterText {
  text-align:center;
  padding-top:1em;
