@@ -190,9 +190,11 @@ a:hover {
 }
 .sponsor {
  position:relative;
- display:inline-block;
+ width:100%;
+ max-width:250px;
  text-align:center;
- padding:1em;
+ margin:0 auto;
+ padding:2em 1em 1em 1em;
 }
 .sponsorName {
  font-size:1.5em;
@@ -200,9 +202,8 @@ a:hover {
  color:rgb(249, 191, 59);
 }
 .sponsorLogo {
- max-width:250px;
+ max-width:100%;
 }
-
 
 .level {
  position:absolute;
@@ -210,7 +211,7 @@ a:hover {
  right:0em;
  font-weight:bold;
  background-color:#e74c3c;
- padding:0.5em 1em;
+ padding:0.3em 0.5em;
  font-size:1.2em;
  opacity:0.95;
  border-right:4px solid black;
