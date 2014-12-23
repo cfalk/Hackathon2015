@@ -191,7 +191,7 @@ a:hover {
 .sponsor {
  position:relative;
  width:100%;
- max-width:250px;
+ max-width:350px;
  text-align:center;
  margin:0 auto;
  padding:2em 1em 1em 1em;
@@ -203,6 +203,9 @@ a:hover {
 }
 .sponsorLogo {
  max-width:100%;
+}
+.sponsor.silver {
+ max-width:150px;
 }
 
 .level {
