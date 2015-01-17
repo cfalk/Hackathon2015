@@ -25,11 +25,26 @@
                    "img":"http://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nvidia_logo.svg/1280px-Nvidia_logo.svg.png",
                    "level":"silver"
                   }
-                 ]
+                 ];
+
+  var institution = [
+    "Haverford College Office of the President",
+    "Tri-Co Digital Humanities",
+    "Haverford College Department of Computer Science",
+    "Haverford College Instructional and Information Technology Services",
+    "Haverford College Libraries",
+    "John B. Hurford Center for the Arts and Humanities"
+  ];
+
+  var others = [
+    "Matt Wallaert (Swarthmore '04), Behavioral Scientist, Microsoft"
+  ];
 
   loadTemplate("logo.html");
   loadTemplate("menu.html");
-  loadTemplate("sponsors.html", {"sponsors":sponsors});
+  loadTemplate("sponsors.html", {"sponsors":sponsors,
+                                 "institution":institution,
+                                 "others":others});
   loadTemplate("copyright.html");
   </script>
 

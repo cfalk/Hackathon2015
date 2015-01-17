@@ -213,6 +213,16 @@ a:hover {
  max-width:150px;
 }
 
+.institutionalSponsor, .otherSponsor {
+ padding:0.2em 0em;
+ font-size:0.9em;
+}
+
+#sponsorButton {
+  padding:0.25em 0.25em;
+  margin-top:2em;
+}
+
 .level {
  position:absolute;
  top:0.25em;

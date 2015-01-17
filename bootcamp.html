@@ -14,15 +14,20 @@
 
   <script>
   var schedule = [
-    ["Time",    "Designer",   "Coder"],
-    ["1PM-4PM", "CMS",        "HTML"],
-    ["4PM-5PM", "jQuery",     "JavaScript"]
+    ["Time",    "Subject"],
+    ["1-1:30PM", "GitHub"],
+    ["1:30-2PM", "HMTL/CSS"],
+    ["2-2:30PM", "JavaScript/jQuery"],
+    ["2:30-3PM", "APIs"],
+    ["3-3:30PM", "Django"],
+    ["3:30-4PM", "AWS and App Development Tools"]
   ];
 
 
   loadTemplate("logo.html");
   loadTemplate("menu.html");
   loadTemplate("bootcamp.html");
+  loadTemplate("bootcamp_schedule.html", {"schedule":schedule});
   loadTemplate("copyright.html");
   </script>
 

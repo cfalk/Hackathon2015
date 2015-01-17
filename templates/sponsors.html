@@ -25,5 +25,22 @@
   </div>
 {{/each}}
 
-<a href="sponsorship.html">become a sponsor?</a>
+
+<div class='ribbonBanner'>Institutional Sponsors</div>
+{{#each institution}}
+  <div class="institutionalSponsor">
+    {{this}}
+  </div>
+{{/each}}
+
+<div class='ribbonBanner'>With Generous Support From</div>
+{{#each others}}
+  <div class="otherSponsor">
+    {{this}}
+  </div>
+{{/each}}
+
+<div id="sponsorButton">
+  <a href="sponsorship.html">become a sponsor?</a>
+</div>
 </div>
