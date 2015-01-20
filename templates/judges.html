@@ -3,7 +3,11 @@
     <div class='scheduleChunk'>
       <div class='scheduleDate'>{{this.name}}</div>
         <div class='scheduleTime'>{{this.position}} @
-          <a href="{{this.link}}">{{this.org}}</a>
+          {{# if this.link }}
+            <a href="{{this.link}}">{{this.org}}</a>
+          {{ else }}
+            {{this.org}}
+          {{/if}}
         </div>
 
         <div class='scheduleDescription'>{{this.bio}}</div>
