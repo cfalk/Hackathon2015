@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Tri-Co Hackathon 2015</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/handlebars-v2.0.0.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/bindings.js"></script>
+    <link href="css/main.css" rel="stylesheet"></link>
+  </head>
+  <body>
+  </body>
+
+  <script>
+  var resources = [
+    {
+      "name":"OpenDataPhilly",
+      "url":"http://www.opendataphilly.org/",
+      "description":"City's official open data site which also has several suburban datasets from the state/SEPTA/etc. "
+    }, {
+      "name":"Geotrellis",
+      "url":"http://transit.geotrellis.com/",
+      "description":"Rest API for the greater Philly region (including Haverford) using Azavea's GeoTrellis Scala library to map \"travelsheds\" which may be helpful in breaking the Haverbubble with sustainable transit."
+    }, {
+      "name":"Philly Tree Map",
+      "url":"http://phillytreemap.org/",
+      "description":"Crowdsourced map of trees in the Philly region with environmental benefit calculations. A fun/helpful non-technical project for those uncomfortable with coding at the hackathon could be using PTM and mobile apps and tape measures to map out Haverford's arboretum trees - many of the species are already identified with plaques! All the data is also open/exportable."
+    }, {
+      "name":"Philly History",
+      "url":"http://phillyhistory.org/",
+      "description":"Great digital humanities resource. If you have questions about using any of these resources, feel free to ask any of the staff volunteers who will be there this afternoon and evening. Get excited!"
+    }, {
+      "name":"Trico Course Catalog API",
+      "url":"http://dev-trico-cc.haverford.edu/",
+      "description":"A RESTful API service for searching and returning data about courses available at Haverford, Bryn Mawr and Swarthmore colleges."
+    }
+  ];
+
+  resources.sort(function(a,b){
+    if (a.name>b.name) return 1;
+    else if (a.name===b.name) return 0;
+    else return -1;
+  })
+
+  loadTemplate("logo.html");
+  loadTemplate("menu.html");
+  loadTemplate("resources.html", {"resources":resources});
+  loadTemplate("copyright.html");
+  </script>
+
+</html>
+
