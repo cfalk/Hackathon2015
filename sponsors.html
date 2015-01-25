@@ -40,10 +40,33 @@
     "Matt Wallaert (Swarthmore '04), Behavioral Scientist, Microsoft"
   ];
 
+  var food = [
+    {
+     "name":"Saxbys",
+     "url":"https://saxbyscoffee.com/"
+    }, {
+     "name":"Insomnia Cookies",
+     "url":"https://insomniacookies.com/"
+    }, {
+     "name":"Hummus Grill",
+     "url":"http://www.hummusrestaurant.com/"
+    }, {
+     "name":"Ardmore Grill",
+     "url":"http://www.ardmorepizza.net/"
+    }, {
+     "name":"Sunny Valley Pizza",
+     "url":"http://sunvalleypizzabrynmawr.com/"
+    }, {
+     "name":"PrimoHoagies",
+     "url":"https://www.primohoagies.com/"
+    }
+  ]
+
   loadTemplate("logo.html");
   loadTemplate("menu.html");
   loadTemplate("sponsors.html", {"sponsors":sponsors,
                                  "institution":institution,
+                                 "food":food,
                                  "others":others});
   loadTemplate("copyright.html");
   </script>

@@ -40,7 +40,16 @@
   </div>
 {{/each}}
 
+<div class='ribbonBanner'>Food Sponsors</div>
+{{#each food}}
+  <div class="otherSponsor">
+    <a href="{{this.url}}">{{this.name}}</a>
+  </div>
+{{/each}}
+
+
 <div id="sponsorButton">
   <a href="sponsorship.html">become a sponsor?</a>
 </div>
+
 </div>
